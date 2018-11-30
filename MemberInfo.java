@@ -38,7 +38,7 @@ public class MemberInfo{
    
    //setters
    public int setAge(int age){
-      this.firstName = firstName;
+      this.age = age;
    }
    public String setFirstName(String firstName){
       this.firstName = firstName;
