@@ -8,11 +8,11 @@ public class MemberInfo{
    private boolean competitor;
    
    //contructor
-   public Memberinfo(int age, String name, boolean active, boolean senior, boolean competitor){
+   public Memberinfo(int age, String name, boolean active, String ageGroup, boolean competitor){
       this.age = age;
       this.name = name;
       this.active = active;
-      this.ageGroup = senior;
+      this.ageGroup = ageGroup;
       this.competitior = competitor;
    }
    
