@@ -8,7 +8,7 @@ public class MemberInfo{
 	   private boolean competitor;
 	   
 	   //contructor
-	   public void Memberinfo(int age, String firstName, String lastName, boolean active, String ageGroup, boolean competitor){
+	   public MemberInfo(int age, String firstName, String lastName, boolean active, String ageGroup, boolean competitor){
 	      this.age = age;
 	      this.firstName = firstName;
 	      this.lastName = lastName;
