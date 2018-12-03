@@ -3,6 +3,7 @@ import java.io.*;
 
 public class Cashier{
 
+   public void subscriptionFee(){
 
 
 
@@ -11,11 +12,12 @@ public class Cashier{
 
 
 
+   }
 
-
-
-
-
+   public void overviewNonPaid(){
+   
+   
+   }
 
 
 
