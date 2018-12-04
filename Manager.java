@@ -13,16 +13,17 @@ public class Manager extends Cashier{
    Scanner scan = new Scanner(System.in); //Opretter Scanner
 
    public void addMember(){
+   MemberInfo meminfo = new MemberInfo(setFirstName, setLastName, setActive, setAgeGroup, setCompetitor, setSubscriptionFeePrice);
    while (choiceFaerdig == 1){
 	   System.out.println("Du skal nu indtaste medlemmets oplysninger");
 	   
 	   System.out.println("Indtast Fornavn: ");
 	   fornavn = scan.nextLine();
-	   System.out.println("Indtastet fornavn: " +fornavn);
+	   System.out.println("Indtastet fornavn: " + fornavn);
    
 	   System.out.println("Indtast Efternavn:");
 	   efternavn = scan.nextLine();
-	   System.out.println("Indtastet fornavn : " +efternavn);
+	   System.out.println("Indtastet fornavn : " + efternavn);
    
 	   System.out.println("Skal medlemmet have aktivt eller passivt medlemsskab?");
       while (choiceActivePassive != "aktivt" && choiceActivePassive != "passivt"){
@@ -44,14 +45,32 @@ public class Manager extends Cashier{
 	   choiceAge = scan.nextInt();
 	   if (choiceAge == (1)){
 		   System.out.println("Du har valgt under 18.");
+         if (choiceActivePassive.equals ("passivt")){
+         setSubscriptionFeePrice = 500;
+         }
+         else if (choiceActivePassive.equals ("aktivt")){
+         setSubscriptionFeePrice = 1000;
+         }
          break;
 	   }
 	   else if (choiceAge == (2)){
 		   System.out.println("Du har valgt over 18.");
+         if (choiceActivePassive.equals ("passivt")){
+         setSubscriptionFeePrice = 500;
+         }
+         else if (choiceActivePassive.equals ("aktivt")){
+         setSubscriptionFeePrice = 1600;
+         }
          break;
-	   }	
+  	   }	
 	   else if (choiceAge == (3)){
 		   System.out.println("Du har valgt +60.");
+         if (choiceActivePassive.equals ("passivt")){
+         setSubscriptionFeePrice = 500;
+         }
+         else if (choiceActivePassive.equals ("aktivt")){
+         setSubscriptionFeePrice = 1200;
+         }
          break;
 	   }
 	   else{
