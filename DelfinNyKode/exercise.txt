@@ -1,0 +1,6 @@
+Gert_Hansen 16 Junior passive exercise 500
+John_Olsen 12 Junior active exercise 1000
+Gert_Hansen 16 Junior passive exercise 500
+John_Olsen 12 Junior active exercise 1000
+Torben_Nielsen 70 Senior active exercise 1200
+Ib_Larsen 75 Senior passive exercise 500
