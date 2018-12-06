@@ -14,7 +14,7 @@ public class Menu{
 	private String password = "";
 	private String choice = "";
    
-	// login menu
+	// Sign in menu
 	public void signIn()throws FileNotFoundException, InterruptedException{
       
 		member.registerMembers();
