@@ -74,7 +74,7 @@ public class Manager extends Cashier{
          break;
 	   }
 	   else{
-		   System.out.println("Du har valgt en ugyldig kommando, benyt venligst fÃ¸lgende, og prÃ¸v igen: ");
+		   System.out.println("Du har valgt en ugyldig kommando, benyt venligst fÃƒÂ¸lgende, og prÃƒÂ¸v igen: ");
 	   }
      }
    
@@ -91,25 +91,25 @@ public class Manager extends Cashier{
 	   }
 	   else{
 		   System.out.println("Du har skrevet en ugyldig kommando, benyt venligst 'motionist' eller 'konkurrence'");
-		   System.out.println("Prøv venligst igen");
+		   System.out.println("PrÃ¸v venligst igen");
 	   }
      }
-      System.out.println("Ønsker du at tilføje flere medlemmere, eller fortsætte?");
-      System.out.println("Tast 1 for at tilføje flere, tast 2 for at forsætte");
+      System.out.println("Ã˜nsker du at tilfÃ¸je flere medlemmere, eller fortsÃ¦tte?");
+      System.out.println("Tast 1 for at tilfÃ¸je flere, tast 2 for at forsÃ¦tte");
       choiceFaerdig = scan.nextInt();
       if (choiceFaerdig == 1){
       choiceFaerdig = 1;
-      System.out.println("Du har valgt at tilføje flere medlemmere");
+      System.out.println("Du har valgt at tilfÃ¸je flere medlemmere");
       System.out.println("");
       }
      else if (choiceFaerdig == 2){
       choiceFaerdig = 2;
-      System.out.println("Du har valgt at fortsætte");
+      System.out.println("Du har valgt at fortsÃ¦tte");
       break;
       }
       else{
-      System.out.println("Du har brugt en forkert kommando, benyt venligt '1' for at tilføje flere, og '2' for at fortsætte");
-      System.out.println("Prøv igen");
+      System.out.println("Du har brugt en forkert kommando, benyt venligst '1' for at tilfÃ¸je flere, og '2' for at fortsÃ¦tte");
+      System.out.println("PrÃ¸v igen");
       }   
     }
   }
