@@ -1,5 +1,3 @@
-package semesterprojekt;
-
 public class Member{
 
    // Attributter
