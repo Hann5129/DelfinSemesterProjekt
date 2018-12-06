@@ -1,5 +1,3 @@
-package semesterprojekt;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
@@ -23,7 +21,7 @@ public class MemberFunctions{
       
    }
    
-   // Member læses og gemmes i en ArrayList<memberList>
+   // Member lÃ¦ses og gemmes i en ArrayList<memberList>
    public void registerMembers()throws FileNotFoundException{
 	   
 	  Scanner scan1 = new Scanner(new File("competition.txt"));
@@ -52,7 +50,7 @@ public class MemberFunctions{
       scan2.close();
    }
  
-   // Tilføjelse af nye medlemmer, som derefter udskrives   
+   // TilfÃ¸jelse af nye medlemmer, som derefter udskrives   
    public void addMembers(){ 
       try{ 
     	  
