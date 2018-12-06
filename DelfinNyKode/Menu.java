@@ -42,7 +42,7 @@ public class Menu{
 		}
 	}
 
-   // manager menu
+   // Manager menu
    public void manager()throws FileNotFoundException, InterruptedException{
 	   
       System.out.println("Now logged in as 'Manager'");
@@ -71,7 +71,7 @@ public class Menu{
       }   
    }
 
-   // cashier menu
+   // Cashier menu
    public void cashier()throws FileNotFoundException, InterruptedException{
 	   
       System.out.println("Now logged in as 'Cashier'");
