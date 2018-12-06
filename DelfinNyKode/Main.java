@@ -1,5 +1,3 @@
-package semesterprojekt;
-
 import java.io.FileNotFoundException;
 
 public class Main{
