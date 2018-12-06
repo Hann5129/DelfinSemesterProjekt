@@ -1,5 +1,3 @@
-package semesterprojekt;
-
 public class Exerciser extends Member{
 
    // Sub class constructor
