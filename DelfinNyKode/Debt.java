@@ -5,15 +5,15 @@ public class Debt{
    // Visning af alle klubbens medlemmer som skylder kontingent
 	public void viewDebt(){
 		
+		// En ArrayList af typen Member kaldet memberList skabes, 
+		// som skaber et nyt object af memberFunctions, hvorpå getteren for memberList kaldes.
 		ArrayList<Member> memberList = new MemberFunctions().getMemberList();
 		
-	 	int random1 = (int) (Math.random() * memberList.size());
-	 	int random2 = (int) (Math.random() * memberList.size());
+	 	int random = (int) (Math.random() * memberList.size());
    
 	 	System.out.println();
 	 	System.out.println("List of Members in debt:");
-	 	memberList.get(random1).setFeePaid(false);
-	 	memberList.get(random2).setFeePaid(false);
+	 	memberList.get(random).setFeePaid(false);
    
 	 	// for each loop som udskriver liste af medlemmer i restance
 	 	for(Member i : memberList){
