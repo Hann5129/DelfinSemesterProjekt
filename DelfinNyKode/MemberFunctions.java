@@ -16,9 +16,7 @@ public class MemberFunctions{
  
    // memberList getter
    public static ArrayList<Member> getMemberList(){
-	   
-      return memberList;
-      
+	   return memberList;
    }
    
    // Member læses og gemmes i en ArrayList<memberList>
@@ -55,7 +53,8 @@ public class MemberFunctions{
    // Tilføjelse af nye medlemmer, som derefter udskrives   
    public void addMembers(){ 
       try{ 
-    	  
+    	 
+	 // input igennem scanneren for variable     
          System.out.print("Type in member's name: ");
          String name = scan.next();
          
@@ -68,6 +67,7 @@ public class MemberFunctions{
          System.out.print("Type in exercise/competitive: ");
          String participationForm = scan.next(); 
          
+	 // sortering af medlemmer paa baggrund af aktivitetsforms, alder og deltagelseform.     
          if(activityStatus.equalsIgnoreCase("passive")){
              clubFee = fees[0];
              if(age <= 18){ 
@@ -99,6 +99,7 @@ public class MemberFunctions{
         			    "Participation Form: "+participationForm+ "\n" +
         			    "Age Group: "+ageGroup+ "\n" +
         			    "Club Fee: "+clubFee+" kr.");
+		 // Instans af exerciser/motionist skabes og lagres i ArrayListen "memberList"
         	 memberList.add(new Exerciser(name, age, ageGroup, activityStatus, participationForm, clubFee));
               
          }else if(participationForm.equalsIgnoreCase("competitive")){
@@ -110,6 +111,7 @@ public class MemberFunctions{
         			    "Participation Form: "+participationForm+ "\n" +
         			    "Age Group: "+ageGroup+ "\n" +
         			    "Club Fee: "+clubFee+" kr.");
+		 // Instans af competitior/kokurrencesvømmer skabes og lagres i ArrayListen "memberList" 
         	 memberList.add(new Competitor(name, age, ageGroup, activityStatus, participationForm, clubFee));
          }
       // exception(fejl) fanges	      
@@ -118,12 +120,13 @@ public class MemberFunctions{
       }
    }
    
-   // Gemmer memberList i en fil alt efter type
+   // Gemmer memberList i en fil
    public void saveMembers()throws FileNotFoundException{
 	   
       PrintStream write1 = new PrintStream("exercise.txt");
       PrintStream write2 = new PrintStream("competition.txt");
       
+      // for each loop, der går igennem ArrayListen(memberList) og sortere objekterne alt efter type, hvorefter de skrives 
       for(Member i : memberList){
          if (i instanceof Exerciser){
             write1.println(i.getName()+" "+i.getAge()+" "+i.getAgeGroup()+" "+i.getActivityStatus()+" "+i.getParticipationForm()+" "+i.getClubFee());
