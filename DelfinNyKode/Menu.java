@@ -17,9 +17,7 @@ public class Menu{
 	// Sign in menu
 	public void signIn()throws FileNotFoundException, InterruptedException{
       
-		// registrering af medlemmer sættes i gang
-		member.registerMembers();
-      
+		// menu navigation
 		while(stop != true){
 			
 			 System.out.println("");
@@ -41,6 +39,8 @@ public class Menu{
 	             signIn();
 	         }
 		}
+		// registrering af medlemmer sættes i gang
+		member.registerMembers();
 	}
 
    // Manager menu
