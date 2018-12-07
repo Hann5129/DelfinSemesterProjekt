@@ -17,6 +17,7 @@ public class Menu{
 	// Sign in menu
 	public void signIn()throws FileNotFoundException, InterruptedException{
       
+		// registrering af medlemmer sættes i gang
 		member.registerMembers();
       
 		while(stop != true){
