@@ -19,14 +19,11 @@ public class Member{
       this.clubFee = clubFee;
         
    }
-   public Member(String name){
-      this.name = name;
-   }
-
+	
    // Getters
    public String getName(){
-	  return this.name;
-	  }
+      return this.name;
+      }
    public int getAge(){
       return this.age;
       }
