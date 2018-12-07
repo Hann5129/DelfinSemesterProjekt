@@ -75,11 +75,11 @@ public class MemberFunctions{
             	 ageGroup = groups[1];
              }
           }
-          else if (age <= 18 && activityStatus.equalsIgnoreCase("active")){
+          else if (age < 18 && activityStatus.equalsIgnoreCase("active")){
         	 clubFee = fees[1];
         	 ageGroup = groups[0];
           }
-          else if ((age >= 18 & age <= 59) && activityStatus.equalsIgnoreCase("active")){
+          else if ((age >= 18 && age < 60) && activityStatus.equalsIgnoreCase("active")){
          	 clubFee = fees[2];
          	 ageGroup = groups[1];
           }
@@ -92,22 +92,22 @@ public class MemberFunctions{
          	 System.out.println();
          	 System.out.println("NEW MEMBER ADDED:");
         	 System.out.println("Name: "+name+"\n" + 
-        			 			"Age: "+age+"\n" + 
-        			 			"Activity Status: "+activityStatus+ "\n" + 
-        			 			"Participation Form: "+participationForm+ "\n" +
-        			 			"Age Group: "+ageGroup+ "\n" +
-        			 			"Club Fee: "+clubFee+" kr.");
+        			    "Age: "+age+"\n" + 
+        			    "Activity Status: "+activityStatus+ "\n" + 
+        			    "Participation Form: "+participationForm+ "\n" +
+        			    "Age Group: "+ageGroup+ "\n" +
+        			    "Club Fee: "+clubFee+" kr.");
         	 memberList.add(new Exerciser(name, age, ageGroup, activityStatus, participationForm, clubFee));
               
          }else if(participationForm.equalsIgnoreCase("competitive")){
         	 System.out.println();
         	 System.out.println("NEW MEMBER ADDED:");
         	 System.out.println("Name: "+name+"\n" + 
-        			 			"Age: "+age+"\n" + 
-        			 			"Activity Status: "+activityStatus+ "\n" + 
-        			 			"Participation Form: "+participationForm+ "\n" +
-        			 			"Age Group: "+ageGroup+ "\n" +
-        			 			"Club Fee: "+clubFee+" kr.");
+        			    "Age: "+age+"\n" + 
+        			    "Activity Status: "+activityStatus+ "\n" + 
+        			    "Participation Form: "+participationForm+ "\n" +
+        			    "Age Group: "+ageGroup+ "\n" +
+        			    "Club Fee: "+clubFee+" kr.");
         	 memberList.add(new Competitor(name, age, ageGroup, activityStatus, participationForm, clubFee));
          }
       }catch(Exception e){
