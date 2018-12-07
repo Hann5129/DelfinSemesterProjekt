@@ -26,6 +26,7 @@ public class MemberFunctions{
 	   
 	  Scanner scan1 = new Scanner(new File("competition.txt"));
       
+      // så længe der er input til scan1 køres while loopet   
       while (scan1.hasNext()) {
          String name = scan1.next();
          int age = scan1.nextInt();
@@ -37,6 +38,7 @@ public class MemberFunctions{
       }
       Scanner scan2 = new Scanner(new File("exercise.txt"));
       
+      // samme som overstående bare for scan2 obj.			   
       while (scan2.hasNext()) {
          String name = scan2.next();
          int age = scan2.nextInt();
@@ -110,6 +112,7 @@ public class MemberFunctions{
         			    "Club Fee: "+clubFee+" kr.");
         	 memberList.add(new Competitor(name, age, ageGroup, activityStatus, participationForm, clubFee));
          }
+      // exception(fejl) fanges	      
       }catch(Exception e){
          System.out.println("User input invalid!");
       }
