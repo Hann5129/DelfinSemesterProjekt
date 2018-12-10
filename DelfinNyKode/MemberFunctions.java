@@ -20,7 +20,7 @@ public class MemberFunctions{
    }
    
    // Member læses og gemmes i en ArrayList<memberList>
-   public void registerMembers()throws FileNotFoundException{
+   public void registerMember()throws FileNotFoundException{
 	   
 	  Scanner scan1 = new Scanner(new File("competition.txt"));
       
@@ -51,7 +51,7 @@ public class MemberFunctions{
    }
  
    // Tilføjelse af nye medlemmer, som derefter udskrives   
-   public void addMembers(){ 
+   public void addMember(){ 
       try{ 
     	 
 	 // input igennem scanneren for variable     
@@ -121,7 +121,7 @@ public class MemberFunctions{
    }
    
    // Gemmer memberList i en fil
-   public void saveMembers()throws FileNotFoundException{
+   public void saveMember()throws FileNotFoundException{
 	   
       PrintStream write1 = new PrintStream("exercise.txt");
       PrintStream write2 = new PrintStream("competition.txt");
