@@ -31,10 +31,6 @@ public class CashierFunctions{
             				      "Debt: "+i.getClubFee()+" kr.");
          }
       }	   
-	   // for each loop, der sætter resten af medlemmerne til at have betalt kontingent
-	   for(Member i : debtList){
-		   i.setFeePaid(true);         
-      } 
    }
 }
 
