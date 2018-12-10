@@ -12,7 +12,7 @@ public class CashierFunctions{
 		
 	 	// en random værdi inden for intervallet af ArrayListens størrelse vælges.
 		// Der type castes til int, fordi returtypen på Math.random metoden er double.
-		int random = (int) (Math.random() * memberList.size());
+		int random = (int) (Math.random() * debtList.size());
    
 	 	System.out.println();
 	 	System.out.println("List of Members in debt:");
