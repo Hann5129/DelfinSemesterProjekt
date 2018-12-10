@@ -1,14 +1,14 @@
 import java.util.ArrayList;
 
-public class Debt{
+public class CashierFunctions{
 
    	// Visning af alle klubbens medlemmer som skylder kontingent.
 	// Der udvælges KUN en tilfældig person på memberList, som udskrives.
 	public void viewDebt(){
 		
-		// En ArrayList af typen Member kaldet memberList skabes, 
-		// som skaber et nyt object af memberFunctions, hvorpå getteren for memberList kaldes.
-		ArrayList<Member> memberList = new MemberFunctions().getMemberList();
+		// En ArrayList af typen Member kaldet debtList tildeles indholdet af memberList fra ManagerFunctions klassen
+	
+		ArrayList<Member> debtList = new ManagerFunctions().getMemberList();
 		
 	 	// en random værdi inden for intervallet af ArrayListens størrelse vælges.
 		// Der type castes til int, fordi returtypen på Math.random metoden er double.
@@ -20,7 +20,7 @@ public class Debt{
 	 	memberList.get(random).setFeePaid(false);
    
 	 	// for each loop som udskriver liste af medlemmer i restance
-	 	for(Member i : memberList){
+	 	for(Member i : debtList){
 		   if (i.getFeePaid() == false){
 			   System.out.println("-----------------------------");
 			   System.out.println("Name: "+i.getName()+"\n"+
@@ -32,7 +32,7 @@ public class Debt{
          }
       }	   
 	   // for each loop, der sætter resten af medlemmerne til at have betalt kontingent
-	   for(Member i : memberList){
+	   for(Member i : debtList){
 		   i.setFeePaid(true);         
       } 
    }
