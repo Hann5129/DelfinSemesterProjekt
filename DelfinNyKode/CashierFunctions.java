@@ -17,7 +17,7 @@ public class CashierFunctions{
 	 	System.out.println();
 	 	System.out.println("List of Members in debt:");
 		// tilfældigt medlem vælges og sættes til ubetalt
-	 	memberList.get(random).setFeePaid(false);
+	 	debtList.get(random).setFeePaid(false);
    
 	 	// for each loop som udskriver liste af medlemmer i restance
 	 	for(Member i : debtList){
