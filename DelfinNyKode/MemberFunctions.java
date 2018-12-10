@@ -19,8 +19,8 @@ public class MemberFunctions{
 	   return memberList;
    }
    
-   // Member læses og gemmes i en ArrayList<memberList>
-   public void registerMember()throws FileNotFoundException{
+   // Her laeses eksisterende data fra filerne, som gemmes i en ArrayList (så data ikke går tabt)
+   public void loadMembers()throws FileNotFoundException{
 	   
 	  Scanner scan1 = new Scanner(new File("competition.txt"));
       
