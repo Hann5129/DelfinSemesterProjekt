@@ -11,7 +11,7 @@ public class Debt{
 		ArrayList<Member> memberList = new MemberFunctions().getMemberList();
 		
 	 	// en random værdi inden for intervallet af ArrayListens størrelse vælges.
-		// Der type castes, fordi returtypen på Math.random metoden er double.
+		// Der type castes til int, fordi returtypen på Math.random metoden er double.
 		int random = (int) (Math.random() * memberList.size());
    
 	 	System.out.println();
