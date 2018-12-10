@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class Menu{
 	
 	// Objekter skabes
-	MemberFunctions member = new MemberFunctions();
-	Debt debt = new Debt();
+	ManagerFunctions managerFunctions = new ManagerFunctions();
+	CashierFunctions cashierFunctions = new CashierFunctions();
    
 	// Attributter
 	private Scanner scan = new Scanner(System.in);
@@ -37,7 +37,7 @@ public class Menu{
 	         }
 		}
 		// eksisterende medlemmer loades
-		member.loadMembers();
+		managerFunctions.loadMembers();
 	}
 
    // Manager menu
@@ -52,8 +52,8 @@ public class Menu{
          choice = scan.next();
       
          if(choice.equals("1")){
-            member.addMember();
-            member.saveMember();
+            managerFunctions.addMember();
+            managerFunctions.saveMember();
          }
          else if(choice.equals("2")){
             System.out.println("Manager signing off");
@@ -81,7 +81,7 @@ public class Menu{
          choice = scan.next();
          
          if(choice.equals("1")){
-            debt.viewDebt();
+            cashierFunctions.viewDebt();
             System.out.println("");
             cashier();    
          }
