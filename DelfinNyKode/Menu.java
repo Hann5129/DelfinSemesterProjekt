@@ -15,7 +15,7 @@ public class Menu{
 	private String choice = "";
    
 	// Sign in menu
-	public void signIn()throws FileNotFoundException, InterruptedException{
+	public void signIn()throws FileNotFoundException{
       
 		// menu navigation
 		while(stop != true){
@@ -44,7 +44,7 @@ public class Menu{
 	}
 
    // Manager menu
-   public void manager()throws FileNotFoundException, InterruptedException{
+   public void manager()throws FileNotFoundException{
 	   
       System.out.println("Now logged in as 'Manager'");
       System.out.println("1 - Add new Member");
@@ -73,7 +73,7 @@ public class Menu{
    }
 
    // Cashier menu
-   public void cashier()throws FileNotFoundException, InterruptedException{
+   public void cashier()throws FileNotFoundException{
 	   
       System.out.println("Now logged in as 'Cashier'");
       System.out.println("1 - View Member debt");
