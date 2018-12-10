@@ -39,8 +39,8 @@ public class Menu{
 	             signIn();
 	         }
 		}
-		// registrering af medlemmer sættes i gang
-		member.registerMembers();
+		// registrering af et medlem sættes i gang
+		member.registerMember();
 	}
 
    // Manager menu
@@ -55,8 +55,8 @@ public class Menu{
          choice = scan.next();
       
          if(choice.equals("1")){
-            member.addMembers();
-            member.saveMembers();
+            member.addMember();
+            member.saveMember();
          }
          else if(choice.equals("2")){
             System.out.println("Manager signing off");
