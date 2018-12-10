@@ -30,17 +30,14 @@ public class Menu{
 	        	 manager();     
 	         }else if(password.equals("cashier")){
 	        	 cashier();
-	         }else if(password.equals("5")){
-	        	 System.out.println("Shutting down");
-	        	 stop = true;
 	         }else {
 	        	 System.out.println("Incorrect Password!");
-	             System.out.println("Try again");
-	             signIn();
+	             	 System.out.println("Try again");
+	                 signIn();
 	         }
 		}
-		// registrering af et medlem sættes i gang
-		member.registerMember();
+		// eksisterende medlemmer loades
+		member.loadMembers();
 	}
 
    // Manager menu
